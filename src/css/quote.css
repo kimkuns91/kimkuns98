@@ -1,0 +1,17 @@
+#quote {
+    text-align: center;
+    margin-top: 1%;
+}
+
+#quote span:first-child {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 7px;
+}
+
+#quote span:last-child {
+    font-size: 18px;
+    opacity: 0.4;
+    color: white;
+    font-weight: 600;
+}

@@ -1,0 +1,98 @@
+#greet {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 80px;
+    color: #e5ffda;
+    text-shadow: 0 0 20px rgb(17, 230, 10),  0 0 20px rgba(10, 175, 230, 0);
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+  
+#login-button{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    /* margin: auto; */
+    margin-top: 12%;
+    margin-left: 47%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    overflow: hidden;
+    box-shadow: 10px 10px 30px #000;
+}
+    
+#login-form {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 200px;
+    height: 100px;
+    margin-top: 12%;
+    margin-left: 43%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    text-decoration: none;
+    position: relative;
+    width: 93%;
+    display: block;
+    margin: 5px auto;
+    font-size: 17px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(0, 0, 0, 0.753);
+
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]{
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(255, 255, 255, 0.76);
+
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgb(3, 3, 3);
+}
+
+#logout {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+}

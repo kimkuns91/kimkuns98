@@ -1,0 +1,119 @@
+#todo-form {
+    text-align: center;
+    position: absolute;
+    margin-left: 42.5%;
+    top: 60%;
+    width: 300px;
+}
+
+#todo-box {
+    position: absolute;
+    margin-left: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: wheat;
+ 
+}
+
+#todo-list li {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Sunflower', sans-serif;
+    text-align: left;
+    color: #daf6ff;
+    text-shadow: 0 0 20px rgb(10, 113, 230),  0 0 20px rgba(10, 175, 230, 0);
+    font-size: 30px;
+    list-style: decimal;
+    margin-left: 50px;
+}
+
+#todo-list li:hover {
+    text-decoration: line-through rgba(10, 160, 230, 0.795);
+}
+
+#todo-list li button {
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: auto;
+    border: none;
+    font-size: 20px;
+
+}
+
+#container {
+  width: 450px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  user-select: none;
+  position: absolute;
+  margin-left: 38.5%;
+  top: 70%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  counter-reset: done-items undone-items;
+}
+
+#todo-list input {
+  display: block;
+  height: 53px;
+  margin: 0 0 -53px -9999px;
+  order: 4;
+  outline: none;
+  counter-increment: undone-items;
+}
+
+input:checked {
+  order: 2;
+  counter-increment: done-items;  
+}
+
+label {
+  display: block;
+  position: relative;
+  padding: 15px;
+  border-bottom: 1px solid #fff;
+  order: 4;
+  cursor: pointer;
+  animation: undone .5s;
+}
+
+label:hover, input:focus + label {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+@keyframes done {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes undone {
+  0% {
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+}
